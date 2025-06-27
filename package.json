@@ -37,6 +37,9 @@
       "optional": true
     }
   },
+  "engines": {
+    "node": ">=20.8.1"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/react-native-voice/voice.git"

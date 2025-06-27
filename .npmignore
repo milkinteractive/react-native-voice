@@ -1,1 +1,29 @@
+# Ignore development, example and CI resources
+.circleci/
+.github/
+.vscode/
+example/
+
+# Ignore local build artifacts
+android/.gradle/
+android/build/
+plugin/build/
+**/build/
+
+# IDE and misc
+.idea/
+*.iml
+
+# Logs and cache
+npm-debug.log*
+yarn-error.log*
+
+# Node modules (not published)
+node_modules/
+
+# Test & demo files
 VoiceTest
+
+# Misc root configs not needed in package
+.nvmrc
+

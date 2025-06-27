@@ -1,7 +1,7 @@
 {
-  "name": "@react-native-voice/voice",
+  "name": "@milkinteractive/react-native-voice",
   "description": "React Native Native Voice library for iOS and Android",
-  "version": "3.2.4",
+  "version": "3.3.0",
   "author": "Sam Wenke <samwenke@gmail.com>",
   "private": false,
   "homepage": "https://github.com/react-native-voice/voice",
@@ -58,7 +58,7 @@
     "android": "yarn --cwd example android",
     "prepare": "yarn build && yarn build:plugin",
     "build": "tsc",
-    "dev-sync": "cp -r ./dist example/node_modules/@react-native-voice/voice",
+    "dev-sync": "cp -r ./dist example/node_modules/@milkinteractive/react-native-voice",
     "type-check": "tsc -noEmit",
     "build:plugin": "tsc --build plugin",
     "lint:plugin": "eslint plugin/src/*"
@@ -68,11 +68,10 @@
   },
   "codegenConfig": {
     "name": "RNVoiceSpec",
-    "type": "all",
+    "type": "modules",
     "jsSrcsDir": "src",
     "outputDir": {
-      "ios": "ios/generated",
-      "android": "android/generated"
+      "ios": "ios/generated"
     },
     "android": {
       "javaPackageName": "com.wenkesj.voice"
